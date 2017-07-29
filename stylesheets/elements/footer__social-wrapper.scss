@@ -1,0 +1,9 @@
+$font-size: 14px;
+
+.footer__social-wrapper {
+  padding: 5px 0;
+  float: right;
+  span{
+    font-size: $font-size;
+  }
+}

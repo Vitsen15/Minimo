@@ -1,0 +1,15 @@
+$font-size-logo: 30px;
+$font-logo: "Inconsolata";
+
+.header__logo{
+  float: left;
+  a{
+    font-family: $font-logo;
+    font-size: $font-size-logo;
+    letter-spacing: 6px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+  }
+}

@@ -1,0 +1,19 @@
+$background: #f0f0f0;
+
+.footer {
+  background-color: $background;
+  margin-top: 150px;
+  padding: 20px 70px 20px 150px;
+
+  li {
+    margin-left: 10px;
+    display: inline-block;
+    word-spacing: 5px;
+  }
+}
+
+//@include breakpoint('mobile'){
+//  p{
+//    background: #f00;
+//  }
+//}

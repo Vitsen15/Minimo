@@ -1,0 +1,16 @@
+$font-footer: 'PlayfairDisplay';
+$social-icons-color: #626262;
+
+.footer__social {
+  display: inline-block;
+  word-spacing: 7px;
+
+  a {
+    color: $social-icons-color;
+    text-decoration: none;
+  }
+
+  span{
+    font-family: $font-footer;
+  }
+}

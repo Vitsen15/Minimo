@@ -1,0 +1,19 @@
+$font-footer: 'PlayfairDisplay';
+$font-size: 14px;
+$text-color: black;
+
+.footer__links {
+  li:first-of-type {
+    margin-left: 0;
+  }
+
+  a {
+    font-family: $font-footer;
+    font-size: $font-size;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  display: inline-block;
+  padding: 5px 0;
+}

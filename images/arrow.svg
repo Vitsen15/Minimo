@@ -1,0 +1,17 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_2">
+   <line stroke="#000" fill="none" stroke-width="10" x1="575.554281" y1="194.638302" x2="0.473043" y2="23.300924" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+   <line stroke="#000" fill="none" stroke-width="10" stroke-opacity="null" fill-opacity="null" x1="146.723657" y1="195.187458" x2="2.430826" y2="24.75367" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+   <line stroke="#000" fill="none" stroke-width="10" stroke-opacity="null" fill-opacity="null" x1="577.568401" y1="194.815516" x2="143.630981" y2="194.815516" id="svg_6" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+   <line stroke="#000" fill="none" stroke-width="10" x1="576.705821" y1="195.214069" x2="1.624583" y2="372.114729" id="svg_12" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+   <line stroke="#000" fill="none" stroke-width="10" stroke-opacity="null" fill-opacity="null" x1="147.875197" y1="195.763226" x2="3.582366" y2="372.114729" id="svg_13" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  </g>
+ </g>
+</svg>

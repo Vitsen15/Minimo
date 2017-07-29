@@ -1,0 +1,55 @@
+@import "variables";
+@import "fonts";
+@import "typography";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+main {
+  //display: table;
+  //min-height: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer > .content-wrapper,
+.header > .content-wrapper{
+  padding: 10px 0;
+}
+
+.content-wrapper{
+  padding: 0 70px;
+}
+
+.imaged-post-holder{
+  padding: 25px 80px 0 70px;
+}
+
+.subscribe-holder{
+  background-color: #f0f0f0;
+  text-align: center;
+  width: 100%;
+  padding: 65px 0 75px 0;
+  margin-bottom: 70px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+//base styles, and base classes like wrappers, containers or clearfix...
+
+

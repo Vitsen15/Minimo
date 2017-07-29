@@ -1,0 +1,46 @@
+$subscribe-font: "Playfair Display";
+$subscribe-logo-color: #333333;
+$subscribe-bg: #f0f0f0;
+$subscribe-text-color: #626262;
+
+.subscribe {
+  display: inline-block;
+  position: relative;
+  max-width: 420px;
+
+  & label {
+    display: block;
+    font-family: $subscribe-font;
+    font-size: 30px;
+    color: $subscribe-logo-color;
+    word-spacing: 4px;
+    padding-bottom: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  & input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    font-family: $subscribe-font;
+    background: $subscribe-bg;
+    color: $subscribe-text-color;
+    padding-bottom: 15px;
+  }
+
+  & button {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    cursor: pointer;
+    background: url("../images/arrow.svg") no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 32px;
+    border: none;
+    outline: none;
+  }
+}

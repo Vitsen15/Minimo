@@ -1,0 +1,13 @@
+$category-font: "Ubuntu";
+$category-font-color: #b4ad9e;
+
+.imaged-post__header{
+  margin-bottom: 20px;
+  & a{
+    font-family: $category-font;
+    font-size: 14px;
+    text-decoration: none;
+    color: $category-font-color;
+    text-transform: uppercase;
+  }
+}

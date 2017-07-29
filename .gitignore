@@ -1,0 +1,11 @@
+.DS_Store
+/.cache
+/.npm-debug.log
+/.sass-cache
+/build
+/node_modules
+/.zip
+/.rar
+/css/main.css
+/js/min/main.js
+/.idea/

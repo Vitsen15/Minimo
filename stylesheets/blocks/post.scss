@@ -1,0 +1,17 @@
+$category-font: "Ubuntu";
+$category-font-color: #b4ad9e;
+
+.post{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 95px 80px;
+
+  & > a{
+    font-family: $category-font;
+    font-size: 14px;
+    text-decoration: none;
+    color: $category-font-color;
+    text-transform: uppercase;
+  }
+
+}
