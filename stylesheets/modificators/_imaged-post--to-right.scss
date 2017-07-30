@@ -1,0 +1,36 @@
+.imaged-post:nth-child(even) {
+  float: right;
+  width: 50%;
+
+  .imaged-post__poster {
+    background-position: left;
+  }
+
+  .imaged-post__header a {
+    margin-left: 0;
+  }
+
+  .post-content {
+    margin-left: 0;
+  }
+
+  @include breakpoint('large') {
+    .imaged-post__poster {
+      background-position: right;
+    }
+
+    .imaged-post__header a {
+      margin-left: 25px;
+    }
+
+    .post-content {
+      margin-left: 25px;
+    }
+  }
+
+  @include breakpoint('extra-small') {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}

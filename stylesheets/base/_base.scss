@@ -26,6 +26,11 @@ main {
   padding: 10px 0;
 }
 
+.footer > .content-wrapper{
+  padding-left: 80px;
+}
+
+
 .content-wrapper{
   padding: 0 70px;
 }
@@ -48,6 +53,18 @@ main {
   height: 0;
   clear: both;
   visibility: hidden;
+}
+
+@include breakpoint('small-tablet-portrait') {
+  .content-wrapper{
+    padding: 0;
+  }
+}
+
+@include breakpoint('mobile') {
+  .imaged-post-holder{
+    padding: 0 30px;
+  }
 }
 
 //base styles, and base classes like wrappers, containers or clearfix...

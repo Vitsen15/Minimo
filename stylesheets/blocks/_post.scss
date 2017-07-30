@@ -13,5 +13,10 @@ $category-font-color: #b4ad9e;
     color: $category-font-color;
     text-transform: uppercase;
   }
+}
 
+@include breakpoint('mobile') {
+  .post{
+    padding: 95px 30px;
+  }
 }

@@ -1,0 +1,16 @@
+.imaged-post:nth-child(odd){
+  float: left;
+  width: 50%;
+
+  .imaged-post__poster{
+    background-position: left;
+  }
+}
+
+@include breakpoint('extra-small'){
+  .imaged-post:nth-child(odd){
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}

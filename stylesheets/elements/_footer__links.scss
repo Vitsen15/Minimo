@@ -17,3 +17,17 @@ $text-color: black;
   display: inline-block;
   padding: 5px 0;
 }
+
+@include breakpoint('small-tablet-portrait'){
+  .footer > .content-wrapper{
+    padding-left: 0;
+  }
+}
+
+@include breakpoint('mobile-landscape'){
+  .footer__links{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

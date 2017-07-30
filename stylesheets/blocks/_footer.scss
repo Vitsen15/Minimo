@@ -3,7 +3,7 @@ $background: #f0f0f0;
 .footer {
   background-color: $background;
   margin-top: 150px;
-  padding: 20px 70px 20px 150px;
+  padding: 20px 70px;
 
   li {
     margin-left: 10px;
@@ -12,8 +12,8 @@ $background: #f0f0f0;
   }
 }
 
-//@include breakpoint('mobile'){
-//  p{
-//    background: #f00;
-//  }
-//}
+@include breakpoint('small-tablet-portrait'){
+  .footer > .content-wrapper{
+    padding-left: 0;
+  }
+}
