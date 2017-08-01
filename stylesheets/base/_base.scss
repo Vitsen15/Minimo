@@ -10,10 +10,6 @@ html,
 body {
   height: 100%;
 }
-main {
-  //display: table;
-  //min-height: 100%;
-}
 
 .container{
   max-width: 1200px;
@@ -33,6 +29,12 @@ main {
 
 .content-wrapper{
   padding: 0 70px;
+
+  @include breakpoint ('extra-small') {
+    & {
+      padding-top: 100px;
+    }
+  }
 }
 
 .imaged-post-holder{
@@ -57,6 +59,12 @@ main {
 
 @include breakpoint('small-tablet-portrait') {
   .content-wrapper{
+    padding: 100px 0 0;
+  }
+}
+
+@include breakpoint ('extra-small') {
+  .header > .content-wrapper{
     padding: 0;
   }
 }

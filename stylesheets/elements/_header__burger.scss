@@ -1,0 +1,21 @@
+.header__burger {
+  color: #fff;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 3;
+  width: 40px;
+
+  & span {
+    display: block;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+  }
+
+  & span.first{
+    margin-top: 0;
+  }
+}

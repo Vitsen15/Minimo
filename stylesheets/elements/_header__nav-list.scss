@@ -1,29 +1,44 @@
 $nav-list-links: "Playfair Display";
 $nav-links-color: #626262;
 
-.header__nav-list{
+.header__nav-list {
   float: right;
   padding: 10px 0 10px 10px;
 
-  li{
+  li {
     display: inline-block;
     list-style: none;
-    margin-left: 105px;
-    letter-spacing: -2px;
+    margin-left: 30px;
     font-family: $nav-list-links;
   }
 
-  li:first-of-type{
-    margin-left: 0;
-  }
-
-  li:last-of-type{
-    margin-right: 0;
-  }
-
-  a{
+  a {
     color: $nav-links-color;
     text-decoration: none;
     text-transform: uppercase;
+  }
+
+  @include breakpoint('large') {
+    & {
+
+      li:first-of-type {
+        margin-left: 0;
+      }
+
+      li:last-of-type {
+        margin-right: 0;
+      }
+      li {
+        margin-left: 90px;
+      }
+    }
+  }
+
+  @include breakpoint('medium') {
+    & {
+      li{
+        margin-left: 90px;
+      }
+    }
   }
 }

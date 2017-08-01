@@ -12,4 +12,10 @@ $font-logo: "Inconsolata";
     text-transform: uppercase;
 
   }
+
+  @include breakpoint('extra-small') {
+    & {
+      display: none;
+    }
+  }
 }

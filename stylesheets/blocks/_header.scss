@@ -1,3 +1,13 @@
 .header {
   padding: 20px 70px 55px 70px;
+
+  @include breakpoint ('extra-small') {
+    & {
+      padding: 15px 10px;
+      position: fixed;
+      background: darkgrey;
+      width: 100%;
+      z-index: 1000;
+    }
+  }
 }
