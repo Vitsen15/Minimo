@@ -1,36 +1,24 @@
 .imaged-post:nth-child(even) {
   float: right;
-  width: 50%;
+  max-width: 420px;
 
-  .imaged-post__poster {
-    background-position: left;
-  }
-
-  .imaged-post__header a {
-    margin-left: 0;
-  }
-
-  .post-content {
-    margin-left: 0;
-  }
-
-  @include breakpoint('large') {
-    .imaged-post__poster {
-      background-position: right;
-    }
-
-    .imaged-post__header a {
-      margin-left: 25px;
-    }
-
-    .post-content {
-      margin-left: 25px;
+  @include breakpoint('small') {
+    & {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      float: none;
+      max-width: 80%;
     }
   }
 
   @include breakpoint('extra-small') {
-    display: block;
-    width: 100%;
-    clear: both;
+    & {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      float: none;
+      max-width: 80%;
+    }
   }
 }

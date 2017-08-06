@@ -1,11 +1,4 @@
-.imaged-post{
+.imaged-post {
   box-sizing: border-box;
-  padding-left: 10px;
-  min-height: 610px;
-}
-
-@include breakpoint('mobile') {
-  .imaged-post{
-    min-height: 300px;
-  }
+  margin-bottom: 125px;
 }

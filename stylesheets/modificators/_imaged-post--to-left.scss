@@ -1,16 +1,24 @@
-.imaged-post:nth-child(odd){
+.imaged-post:nth-child(odd) {
   float: left;
-  width: 50%;
+  max-width: 420px;
 
-  .imaged-post__poster{
-    background-position: left;
+  @include breakpoint('small') {
+    & {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      float: none;
+      max-width: 80%;
+    }
   }
-}
 
-@include breakpoint('extra-small'){
-  .imaged-post:nth-child(odd){
-    display: block;
-    width: 100%;
-    clear: both;
+  @include breakpoint('extra-small') {
+    & {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      float: none;
+      max-width: 80%;
+    }
   }
 }

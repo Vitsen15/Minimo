@@ -8,9 +8,26 @@ $social-icons-color: #626262;
   a {
     color: $social-icons-color;
     text-decoration: none;
+    transition: color .3s ease;
+
+    & i {
+      transition: color .3s ease;
+    }
+
+    & > .icon-twitter:hover {
+      color: #41ABE1;
+    }
+
+    & > .icon-facebook:hover {
+      color: #4867AA;
+    }
+
+    & > .icon-instagram:hover {
+      color: #BE00A5;
+    }
   }
 
-  span{
-    font-family: $font-footer;
+  & li:first-of-type {
+    margin-left: 0;
   }
 }

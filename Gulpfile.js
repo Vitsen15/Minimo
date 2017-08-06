@@ -22,7 +22,7 @@ gulp.task('stylesheets', function() {
             //includePaths: bourbon.includePaths
         })).on('error', sass.logError)
         .pipe(autoprefixer({
-            browsers: ["last 15 version", "> 1%" , "ie 8"]
+            browsers: ["last 3 version", "> 1%" , "ie 8"]
         }))
         .pipe(gulp.dest('css/'))
         .pipe(browserSync.stream());

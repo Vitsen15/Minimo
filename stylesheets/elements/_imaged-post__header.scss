@@ -9,5 +9,11 @@ $category-font-color: #b4ad9e;
     text-decoration: none;
     color: $category-font-color;
     text-transform: uppercase;
+    transition: color 500ms ease;
+
+    &:hover{
+      text-decoration: underline;
+      color: burlywood;
+    }
   }
 }

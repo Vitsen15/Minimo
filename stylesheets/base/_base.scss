@@ -11,42 +11,48 @@ body {
   height: 100%;
 }
 
-.container{
-  max-width: 1200px;
+.max-width-container{
+  max-width: 1060px;
   width: 100%;
   margin: 0 auto;
-}
 
-.footer > .content-wrapper,
-.header > .content-wrapper{
-  padding: 10px 0;
-}
+  @include breakpoint('medium'){
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
 
-.footer > .content-wrapper{
-  padding-left: 80px;
+  @include breakpoint('small'){
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
 }
-
 
 .content-wrapper{
-  padding: 0 70px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 
-  @include breakpoint ('extra-small') {
-    & {
-      padding-top: 100px;
-    }
+  &:nth-child(2){
+    margin-top: 55px;
   }
 }
 
 .imaged-post-holder{
-  padding: 25px 80px 0 70px;
+  @include breakpoint('extra-small'){
+    margin-top: 80px;
+  }
 }
 
 .subscribe-holder{
   background-color: #f0f0f0;
   text-align: center;
   width: 100%;
-  padding: 65px 0 75px 0;
-  margin-bottom: 70px;
+  padding: 60px 0 75px 0;
+  margin-bottom: 105px;
+
+  @include breakpoint('small'){
+    padding-bottom: 0;
+  }
 }
 
 .clearfix::after {
@@ -55,24 +61,6 @@ body {
   height: 0;
   clear: both;
   visibility: hidden;
-}
-
-@include breakpoint('small-tablet-portrait') {
-  .content-wrapper{
-    padding: 100px 0 0;
-  }
-}
-
-@include breakpoint ('extra-small') {
-  .header > .content-wrapper{
-    padding: 0;
-  }
-}
-
-@include breakpoint('mobile') {
-  .imaged-post-holder{
-    padding: 0 30px;
-  }
 }
 
 //base styles, and base classes like wrappers, containers or clearfix...

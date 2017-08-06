@@ -2,27 +2,26 @@ $post-header-font: "Playfair Display";
 $post-content-font: "Playfair Display";
 
 .post-content {
-
-  h2{
-    margin-bottom: 30px;
-    margin-top: 15px;
-  }
-
   & > h2 > a {
     font-family: $post-header-font;
     text-decoration: none;
     font-size: 30px;
     font-weight: normal;
     color: #626262;
+    transition: text-shadow 500ms ease;
+
+    &:hover{
+      text-shadow: 5px 0 5px darkgrey;
+      //text-decoration: underline;
+    }
   }
 
-  & p {
+  & > p {
     font-family: $post-content-font;
     font-size: 14px;
     color: #626262;
     line-height: 24px;
-    margin-bottom: 45px;
+    margin-top: 30px;
 
   }
-
 }

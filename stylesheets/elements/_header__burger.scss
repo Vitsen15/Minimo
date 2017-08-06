@@ -1,21 +1,52 @@
 .header__burger {
-  color: #fff;
+  position: relative;
   background-color: transparent;
-  padding: 5px;
   cursor: pointer;
   border: none;
   outline: none;
   z-index: 3;
+  height: 35px;
   width: 40px;
+  transition: background .3s ease;
 
   & span {
     display: block;
+    position: absolute;
+    left: 5px;
+    right: 5px;
     height: 5px;
-    background-color: #fff;
-    margin: 5px 0 0;
+    background: #fff;
+    transition: all .3s ease;
+
   }
 
   & span.first{
-    margin-top: 0;
+    top: 5px;
+  }
+
+  & span.second{
+    top: 15px;
+  }
+
+  & span.third{
+    bottom: 5px;
+  }
+
+  &.is-active {
+    background-color: #333333;
+
+    span.first{
+      top: 15px;
+      transform: rotate(45deg);
+    }
+
+    span.second{
+      background: transparent;
+    }
+
+    span.third{
+      bottom: 15px;
+      transform: rotate(-45deg);
+    }
   }
 }

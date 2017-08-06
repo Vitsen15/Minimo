@@ -4,19 +4,47 @@ $category-font-color: #b4ad9e;
 .post{
   box-sizing: border-box;
   width: 100%;
-  padding: 95px 80px;
+  padding-top: 45px;
+  margin-bottom: 130px;
 
   & > a{
+    display: inline-block;
+    margin-bottom: 15px;
     font-family: $category-font;
     font-size: 14px;
     text-decoration: none;
     color: $category-font-color;
     text-transform: uppercase;
+    transition: color 500ms ease;
+
+    &:last-child{
+      margin-top: 45px;
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      text-decoration: underline;
+      color: burlywood;
+    }
+  }
+
+  @include breakpoint('small') {
+    & {
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+      max-width: 80%;
+    }
+  }
+
+  @include breakpoint('extra-small') {
+    & {
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+      max-width: 80%;
+    }
   }
 }
 
-@include breakpoint('mobile') {
-  .post{
-    padding: 95px 30px;
-  }
-}
+

@@ -16,6 +16,20 @@ $nav-links-color: #626262;
     color: $nav-links-color;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: darkgray;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+    }
   }
 
   @include breakpoint('large') {

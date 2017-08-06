@@ -12,6 +12,10 @@ $text-color: black;
     font-size: $font-size;
     color: $text-color;
     text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   display: inline-block;
